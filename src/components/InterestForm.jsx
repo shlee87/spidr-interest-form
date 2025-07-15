@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
 import { IMaskInput } from 'react-imask';
-// Import your styled components
-import {
-  FormContainer,
-  StyledForm,
-  FormGroup,
-  Label,
-  Input,
-  Button
-} from './InterestForm.styles';
+import { FormContainer, StyledForm, FormGroup, Label, Input, StyledIMaskInput, Button } from './InterestForm.styles';
 
 const InterestForm = () => {
     const [formData, setFormData] = useState({
@@ -35,14 +27,10 @@ const InterestForm = () => {
     };
 
     return (
-        // Replace <div> with <FormContainer>
         <FormContainer>
-            {/* Replace <form> with <StyledForm> */}
             <StyledForm onSubmit={handleSubmit}>
-                {/* Replace <div> with <FormGroup> */}
                 <FormGroup>
                     <Label htmlFor="firstName">First Name</Label>
-                    {/* Replace <input> with <Input> */}
                     <Input
                         type="text"
                         id="firstName"
@@ -63,9 +51,7 @@ const InterestForm = () => {
                 </FormGroup>
                 <FormGroup>
                     <Label htmlFor="phoneNumber">Phone Number</Label>
-                    {/* Use the "as" prop to style IMaskInput */}
-                    <Input
-                        as={IMaskInput}
+                    <StyledIMaskInput
                         mask="(000) 000-0000"
                         type="tel"
                         id="phoneNumber"
@@ -85,7 +71,7 @@ const InterestForm = () => {
                     />
                 </FormGroup>
                 <FormGroup>
-                    <Label htmlFor="costGuess">Guess the Air Fryer’s Cost ($)</Label>
+                    <Label htmlFor="costGuess">Guess the Air Fryer's Cost ($)</Label>
                     <Input
                         type="number"
                         id="costGuess"
@@ -96,8 +82,7 @@ const InterestForm = () => {
                 </FormGroup>
                 <FormGroup>
                     <Label htmlFor="spidrPin">Secret 16-Digit Spidr PIN</Label>
-                    <Input
-                        as={IMaskInput}
+                    <StyledIMaskInput
                         mask="0000-0000-0000-0000"
                         type="text"
                         id="spidrPin"
@@ -106,7 +91,6 @@ const InterestForm = () => {
                         onAccept={(value) => handleChange({ target: { name: 'spidrPin', value } })}
                     />
                 </FormGroup>
-                {/* Replace <button> with <Button> */}
                 <Button type="submit">Submit</Button>
             </StyledForm>
         </FormContainer>

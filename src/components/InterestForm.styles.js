@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { IMaskInput } from 'react-imask';
 
 export const FormContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.contentBackground};
@@ -23,14 +24,33 @@ export const FormGroup = styled.div`
 
 export const Label = styled.label`
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.fontSizes.medium};
+  font-size: ${({ theme }) => theme.fontSizes.large};
+  font-weight: ${({ theme }) => theme.fontWeights.light};
+  line-height: ${({ theme }) => theme.lineHeights.medium};
   color: ${({ theme }) => theme.colors.primaryText};
-  font-weight: 500;
 `;
 
 export const Input = styled.input`
   font-family: ${({ theme }) => theme.fonts.body};
   font-size: ${({ theme }) => theme.fontSizes.medium};
+  font-weight: ${({ theme }) => theme.fontWeights.light};
+  padding: 12px 15px;
+  background-color: ${({ theme }) => theme.colors.inputBackground};
+  border: 1px solid ${({ theme }) => theme.colors.borderGray};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  color: ${({ theme }) => theme.colors.primaryText};
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: ${({ theme }) => theme.colors.accentMagenta};
+  }
+`;
+
+export const StyledIMaskInput = styled(IMaskInput)`
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes.medium};
+  font-weight: ${({ theme }) => theme.fontWeights.light};
   padding: 12px 15px;
   background-color: ${({ theme }) => theme.colors.inputBackground};
   border: 1px solid ${({ theme }) => theme.colors.borderGray};
@@ -47,7 +67,7 @@ export const Input = styled.input`
 export const Button = styled.button`
   font-family: ${({ theme }) => theme.fonts.heading};
   font-size: ${({ theme }) => theme.fontSizes.medium};
-  font-weight: 700;
+  font-weight: ${({ theme }) => theme.fontWeights.light};
   padding: 12px 24px;
   background-color: ${({ theme }) => theme.colors.accentMagenta};
   color: ${({ theme }) => theme.colors.primaryText};
