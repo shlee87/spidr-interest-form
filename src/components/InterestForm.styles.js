@@ -28,6 +28,7 @@ export const Label = styled.label`
   font-weight: ${({ theme }) => theme.fontWeights.light};
   line-height: ${({ theme }) => theme.lineHeights.medium};
   color: ${({ theme }) => theme.colors.primaryText};
+  font-style: normal;
 `;
 
 export const Input = styled.input`
