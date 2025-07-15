@@ -70,14 +70,16 @@ export const Button = styled.button`
   font-size: ${({ theme }) => theme.fontSizes.medium};
   font-weight: ${({ theme }) => theme.fontWeights.light};
   padding: 12px 24px;
-  background-color: ${({ theme }) => theme.colors.accentMagenta};
-  color: ${({ theme }) => theme.colors.primaryText};
-  border: none;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: ${({ theme }) => theme.borderRadius};
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.accentMagentaHover};
+    background-color: transparent;
+    color: rgb(86, 172, 189);
+    border-color: rgb(86, 172, 189);
   }
 `;
