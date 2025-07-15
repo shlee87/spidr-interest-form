@@ -2,7 +2,7 @@ export const theme = {
     colors: {
       primaryBackground: '#000000',
       contentBackground: '#1A1A1A',
-      primaryText: '#FFFFFF',
+      primaryText: 'rgb(86, 172, 189)',
       accentMagenta: '#E6007A',
       accentMagentaHover: '#FF1A94',
       borderGray: '#333333',
