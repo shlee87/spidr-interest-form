@@ -39,7 +39,7 @@ export const Input = styled.input`
   background-color: ${({ theme }) => theme.colors.inputBackground};
   border: 1px solid ${({ theme }) => theme.colors.borderGray};
   border-radius: ${({ theme }) => theme.borderRadius};
-  color: ${({ theme }) => theme.colors.primaryText};
+  color: rgb(150, 150, 150);
   transition: border-color 0.3s ease;
 
   &:focus {
@@ -56,7 +56,7 @@ export const StyledIMaskInput = styled(IMaskInput)`
   background-color: ${({ theme }) => theme.colors.inputBackground};
   border: 1px solid ${({ theme }) => theme.colors.borderGray};
   border-radius: ${({ theme }) => theme.borderRadius};
-  color: ${({ theme }) => theme.colors.primaryText};
+  color: rgb(150, 150, 150);
   transition: border-color 0.3s ease;
 
   &:focus {

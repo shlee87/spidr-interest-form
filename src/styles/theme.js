@@ -1,12 +1,12 @@
 export const theme = {
     colors: {
-      primaryBackground: '#000000',
-      contentBackground: '#1A1A1A',
-      primaryText: 'rgb(86, 172, 189)',
-      accentMagenta: '#E6007A',
-      accentMagentaHover: '#FF1A94',
-      borderGray: '#333333',
-      inputBackground: '#0D0D0D',
+      primaryBackground: '#000000',        // Black - Main page background
+      contentBackground: '#1A1A1A',        // Very dark gray - Form container background
+      primaryText: 'rgb(86, 172, 189)',    // Teal - Text color (labels, input text)
+      accentMagenta: 'rgb(86, 172, 189)',            // Bright magenta/pink - Focus borders, button background
+      accentMagentaHover: '#FF1A94',       // Lighter magenta - Button hover state
+      borderGray: '#333333',               // Dark gray - Default input borders
+      inputBackground: '#0D0D0D',          // Very dark gray - Input field background
     },
     fonts: {
       heading: "'Raleway', sans-serif",
