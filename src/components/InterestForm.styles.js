@@ -42,9 +42,13 @@ export const Input = styled.input`
   color: rgb(150, 150, 150);
   transition: border-color 0.3s ease;
 
+  &:hover {
+    border-color: rgb(86, 172, 189);
+  }
+
   &:focus {
     outline: none;
-    border-color: ${({ theme }) => theme.colors.accentMagenta};
+    border-color: rgb(86, 172, 189);
   }
 `;
 
@@ -59,9 +63,13 @@ export const StyledIMaskInput = styled(IMaskInput)`
   color: rgb(150, 150, 150);
   transition: border-color 0.3s ease;
 
+  &:hover {
+    border-color: rgb(86, 172, 189);
+  }
+
   &:focus {
     outline: none;
-    border-color: ${({ theme }) => theme.colors.accentMagenta};
+    border-color: rgb(86, 172, 189);
   }
 `;
 
