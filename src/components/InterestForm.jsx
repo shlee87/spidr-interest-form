@@ -24,6 +24,16 @@ const InterestForm = () => {
         e.preventDefault();
         console.log('Form Data Submitted:', formData);
         alert('Thank you! Your information has been logged to the console.');
+        
+        // Clear the form after submission
+        setFormData({
+            firstName: '',
+            lastName: '',
+            phoneNumber: '',
+            email: '',
+            costGuess: '',
+            spidrPin: ''
+        });
     };
 
     return (

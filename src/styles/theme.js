@@ -1,6 +1,6 @@
 export const theme = {
     colors: {
-      primaryBackground: 'rgb(37, 38, 39)',  // Changed from '#000000' to match
+      primaryBackground: 'rgb(37, 38, 39)',
       contentBackground: 'rgb(26, 28, 28)',
       primaryText: 'rgb(86, 172, 189)',
       accentMagenta: '#E6007A',
