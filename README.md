@@ -42,7 +42,7 @@ To clone this project and run it on your local machine, follow these steps.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
+    git clone https://github.com/shlee87/spidr-interest-form.git
     ```
 
 2.  **Navigate into the project directory:**
